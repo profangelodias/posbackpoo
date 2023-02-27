@@ -4,17 +4,20 @@ public class Pessoa {
 	private String nome;
 	private int data;
 	private String end;
-	private String tel;
-	private String cargo;
+	private Telefone tel;
 	
-	public Pessoa(String nome, int data, String end, String tel, String cargo) {
+	public Pessoa(String nome, int data, String end, Telefone tel) {
 		this.nome = nome;
-		this.cargo = cargo;
 		this.data = data;
 		this.end = end;
 		this.tel = tel;
 	}
 	
+	public Pessoa(String nome, int data, String end) {
+		this.nome = nome;
+		this.data = data;
+		this.end = end;
+	}
 		public String getNome() {
 		return nome;
 	}
@@ -51,29 +54,13 @@ public class Pessoa {
 
 
 
-	public String getTel() {
+	public Telefone getTel() {
 		return tel;
 	}
 
-
-
-	public void setTel(String tel) {
+	public void setTel(Telefone tel) {
 		this.tel = tel;
 	}
-
-
-
-	public String getCargo() {
-		return cargo;
-	}
-
-
-
-	public void setCargo(String cargo) {
-		this.cargo = cargo;
-	}
-
-
 
 	public void cadastrar() {
 
@@ -83,7 +70,11 @@ public class Pessoa {
 
 	}
 
-	public void reajustarSalario(double perc) {
+	public void reajustarSalario(double perc, int id) {
+
+	}
+
+	public void reajustarSalario() {
 
 	}
 	
